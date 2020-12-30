@@ -15,6 +15,7 @@
             "name": "richter",
             "buildsystem": "simple",
             "build-commands": [
+                "sed -e s/arm64/aarch64/g -i JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp JUCE/extras/Projucer/JuceLibraryCode/BinaryData.cpp",
                 "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Richter.jucer",
                 "make -C Builds/LinuxMakefile/"
@@ -63,6 +64,7 @@
             "name": "songbird",
             "buildsystem": "simple",
             "build-commands": [
+                "sed -e s/arm64/aarch64/g -i JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp JUCE/extras/Projucer/JuceLibraryCode/BinaryData.cpp",
                 "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Songbird.jucer",
                 "make -C Builds/LinuxMakefile/"
@@ -130,6 +132,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "Projucer --resave Carve.jucer",
+                "sed -e \"s|Contents/x86_64-linux|Contents/`uname -m`-linux|g\" -i ./Builds/LinuxMakefile/Makefile",
                 "make -C Builds/LinuxMakefile/"
             ],
             "cleanup": [
@@ -177,6 +180,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "Projucer --resave MONSTR.jucer",
+                "sed -e \"s|Contents/x86_64-linux|Contents/`uname -m`-linux|g\" -i ./Builds/LinuxMakefile/Makefile",
                 "make -C Builds/LinuxMakefile/"
             ],
             "post-install": [
