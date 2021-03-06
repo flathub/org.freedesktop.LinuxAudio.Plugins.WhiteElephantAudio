@@ -108,30 +108,11 @@
             ]
         },
         {
-            "name": "projucer",
-            "buildsystem": "simple",
-            "build-commands": [
-                "(cd extras/Projucer/Builds/LinuxMakefile/ && make)"
-            ],
-            "cleanup": [
-                "/bin"
-            ],
-            "post-install": [
-                "install -Dm755 -t ${FLATPAK_DEST}/bin extras/Projucer/Builds/LinuxMakefile/build/Projucer"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/juce-framework/JUCE.git",
-                    "tag": "6.0.1"
-                }
-            ]
-        },
-        {
             "name": "carve",
             "buildsystem": "simple",
             "build-commands": [
-                "Projucer --resave Carve.jucer",
+                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
+                "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Carve.jucer",
                 "sed -e \"s|Contents/x86_64-linux|Contents/`uname -m`-linux|g\" -i ./Builds/LinuxMakefile/Makefile",
                 "make -C Builds/LinuxMakefile/"
             ],
@@ -179,7 +160,8 @@
             "name": "monstr",
             "buildsystem": "simple",
             "build-commands": [
-                "Projucer --resave MONSTR.jucer",
+                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
+                "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave MONSTR.jucer",
                 "sed -e \"s|Contents/x86_64-linux|Contents/`uname -m`-linux|g\" -i ./Builds/LinuxMakefile/Makefile",
                 "make -C Builds/LinuxMakefile/"
             ],
@@ -194,7 +176,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/MONSTR-Stereo-Imaging.git",
-                    "tag": "v1.1.0"
+                    "tag": "v2.0.0"
                 },
                 {
                     "type": "patch",
@@ -210,14 +192,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
-                    "tag": "6.0.1",
+                    "tag": "6.0.7",
                     "dest": "JUCE"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
-                    "tag": "v0.1.6",
-                    "dest": "WE-Core"
+                    "tag": "v0.1.9",
+                    "dest": "WECore"
                 }
             ]
         },
