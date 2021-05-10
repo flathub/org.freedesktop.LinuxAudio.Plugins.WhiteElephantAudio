@@ -15,7 +15,6 @@
             "name": "richter",
             "buildsystem": "simple",
             "build-commands": [
-                "sed -e s/arm64/aarch64/g -i JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp JUCE/extras/Projucer/JuceLibraryCode/BinaryData.cpp",
                 "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Richter.jucer",
                 "make -C Builds/LinuxMakefile/"
@@ -33,7 +32,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/Richter-Tremolo.git",
-                    "tag": "v2.2.0"
+                    "tag": "v2.2.1"
                 },
                 {
                     "type": "patch",
@@ -49,13 +48,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
-                    "tag": "6.0.4",
+                    "tag": "6.0.8",
                     "dest": "JUCE"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
-                    "tag": "v0.1.7",
+                    "tag": "v0.2.0",
                     "dest": "WE-Core"
                 }
             ]
