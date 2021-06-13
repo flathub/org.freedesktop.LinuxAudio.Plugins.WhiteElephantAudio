@@ -28,6 +28,9 @@
     <update_contact>_hub_AT_figuiere_net_</update_contact>
     <url type="homepage">https://whiteelephantaudio.com/plugins/</url>
     <releases>
+      <release version="2021.06.13" date="2021-06-13">
+        <p>MONSTR 2.0.1</p>
+      </release>
       <release version="2021.05.09" date="2021-05-09">
         <p>Richter 2.2.1</p>
       </release>
