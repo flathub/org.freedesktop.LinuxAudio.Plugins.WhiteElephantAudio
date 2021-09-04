@@ -1,0 +1,12 @@
+diff --git a/WECore/WEFilters/StereoWidthProcessor.h b/WECore/WEFilters/StereoWidthProcessor.h
+index 3847782..902e810 100644
+--- a/WECore/WECore/WEFilters/StereoWidthProcessor.h
++++ b/WECore/WECore/WEFilters/StereoWidthProcessor.h
+@@ -21,6 +21,7 @@
+ 
+ #pragma once
+ 
++#include <stdlib.h>
+ #include <vector>
+ 
+ #include "EffectsProcessor.h"

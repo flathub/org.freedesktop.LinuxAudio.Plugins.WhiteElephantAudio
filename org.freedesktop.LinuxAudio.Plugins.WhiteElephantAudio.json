@@ -200,6 +200,10 @@
                     "url": "https://github.com/jd-13/WE-Core.git",
                     "tag": "v0.2.1",
                     "dest": "WECore"
+                },
+                {
+                  "type": "patch",
+                  "path": "patches/wef-build.patch"
                 }
             ]
         },
