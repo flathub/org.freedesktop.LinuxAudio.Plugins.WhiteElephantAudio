@@ -1,5 +1,5 @@
 diff --git a/MONSTR.jucer b/MONSTR.jucer
-index 00ce0bc..ba8ad8b 100644
+index 15a8cdb..3ee9d4c 100644
 --- a/MONSTR.jucer
 +++ b/MONSTR.jucer
 @@ -21,10 +21,10 @@
@@ -68,8 +68,8 @@ index 00ce0bc..ba8ad8b 100644
      <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0"/>
      <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
    </MODULES>
--  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
-+  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_WEB_BROWSER="disabled"/>
+-  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_USE_CURL="0"/>
++  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_USE_CURL="0" JUCE_WEB_BROWSER="disabled"/>
    <LIVE_SETTINGS>
      <OSX/>
    </LIVE_SETTINGS>
