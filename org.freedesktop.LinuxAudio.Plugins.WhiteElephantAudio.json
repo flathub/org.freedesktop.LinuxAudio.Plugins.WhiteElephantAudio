@@ -128,7 +128,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/Carve-Distortion.git",
-                    "tag": "v2.5.0"
+                    "tag": "v2.6.0"
                 },
                 {
                     "type": "patch",
@@ -144,13 +144,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
-                    "tag": "6.0.1",
+                    "tag": "6.1.4",
                     "dest": "JUCE"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
-                    "tag": "v0.1.6",
+                    "tag": "v0.2.3",
                     "dest": "WE-Core"
                 }
             ]
@@ -161,7 +161,6 @@
             "build-commands": [
                 "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave MONSTR.jucer",
-                "sed -e \"s|Contents/x86_64-linux|Contents/`uname -m`-linux|g\" -i ./Builds/LinuxMakefile/Makefile",
                 "make -C Builds/LinuxMakefile/"
             ],
             "post-install": [

@@ -1,5 +1,5 @@
 diff --git a/Carve.jucer b/Carve.jucer
-index 956b474..83d4412 100644
+index 9434e68..1cd260c 100644
 --- a/Carve.jucer
 +++ b/Carve.jucer
 @@ -82,25 +82,25 @@
@@ -42,13 +42,13 @@ index 956b474..83d4412 100644
 +        <MODULEPATH id="juce_gui_extra" path="JUCE/modules"/>
        </MODULEPATHS>
      </LINUX_MAKE>
-     <VS2017 targetFolder="Builds/VisualStudio2017">
+     <VS2019 targetFolder="Builds/VisualStudio2019">
 @@ -143,7 +143,7 @@
      <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
      <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
    </MODULES>
--  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
-+  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_WEB_BROWSER="disabled"/>
+-  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_USE_CURL="0"/>
++  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_USE_CURL="0" JUCE_WEB_BROWSER="disabled"/>
    <LIVE_SETTINGS>
      <OSX buildEnabled="0"/>
    </LIVE_SETTINGS>
