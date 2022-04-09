@@ -40,10 +40,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://fonts.google.com/download?family=Montserrat",
-                    "dest-filename": "Montserrat.zip",
-                    "dest": "Source/Graphics/",
-                    "sha256": "590e5db0ff06496d7264fc44a6d11fbd2e0e8af396669cf37248f22e2a781203"
+                    "path": "Montserrat.zip",
+                    "dest": "Source/Graphics/"
                 },
                 {
                     "type": "git",
@@ -87,10 +85,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://fonts.google.com/download?family=Montserrat",
-                    "dest-filename": "Montserrat.zip",
-                    "dest": "Source/Graphics/",
-                    "sha256": "590e5db0ff06496d7264fc44a6d11fbd2e0e8af396669cf37248f22e2a781203"
+                    "path": "Montserrat.zip",
+                    "dest": "Source/Graphics/"
                 },
                 {
                     "type": "git",
@@ -136,10 +132,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://fonts.google.com/download?family=Montserrat",
-                    "dest-filename": "Montserrat.zip",
-                    "dest": "Source/Graphics/",
-                    "sha256": "590e5db0ff06496d7264fc44a6d11fbd2e0e8af396669cf37248f22e2a781203"
+                    "path": "Montserrat.zip",
+                    "dest": "Source/Graphics/"
                 },
                 {
                     "type": "git",
@@ -183,10 +177,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://fonts.google.com/download?family=Montserrat",
-                    "dest-filename": "Montserrat.zip",
-                    "dest": "Source/Graphics/",
-                    "sha256": "590e5db0ff06496d7264fc44a6d11fbd2e0e8af396669cf37248f22e2a781203"
+                    "path": "Montserrat.zip",
+                    "dest": "Source/Graphics/"
                 },
                 {
                     "type": "git",
