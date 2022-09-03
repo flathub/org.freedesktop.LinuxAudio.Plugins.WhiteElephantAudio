@@ -1,11 +1,11 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.WhiteElephantAudio",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "sdk": "org.freedesktop.Sdk//21.08",
-    "runtime-version": "21.08",
+    "sdk": "org.freedesktop.Sdk//22.08",
+    "runtime-version": "stable",
     "build-extension": true,
     "appstream-compose": false,
-    "branch": "21.08",
+    "branch": "22.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/WhiteElephantAudio",
         "prepend-path": "/app/extensions/Plugins/WhiteElephantAudio/bin"
@@ -95,6 +95,10 @@
                     "dest": "JUCE"
                 },
                 {
+                    "type": "patch",
+                    "path": "patches/juce-616-header.patch"
+                },
+                {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
                     "tag": "v0.2.4",
@@ -144,6 +148,10 @@
                     "url": "https://github.com/juce-framework/JUCE.git",
                     "tag": "6.1.4",
                     "dest": "JUCE"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/juce-614-header.patch"
                 },
                 {
                     "type": "git",
