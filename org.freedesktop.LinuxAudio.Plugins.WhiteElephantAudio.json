@@ -1,8 +1,8 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.WhiteElephantAudio",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "sdk": "org.freedesktop.Sdk//22.08",
     "runtime-version": "stable",
+    "sdk": "org.freedesktop.Sdk//22.08",
     "build-extension": true,
     "appstream-compose": false,
     "branch": "22.08",
@@ -15,9 +15,9 @@
             "name": "richter",
             "buildsystem": "simple",
             "build-commands": [
-                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
+                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make -j $FLATPAK_BUILDER_N_JOBS)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Richter.jucer",
-                "make -C Builds/LinuxMakefile/"
+                "make -j $FLATPAK_BUILDER_N_JOBS -C Builds/LinuxMakefile/"
             ],
             "cleanup": [
             ],
@@ -32,7 +32,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/Richter-Tremolo.git",
-                    "tag": "v2.2.1"
+                    "tag": "v2.3.0"
                 },
                 {
                     "type": "patch",
@@ -46,13 +46,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
-                    "tag": "6.0.8",
+                    "tag": "7.0.2",
                     "dest": "JUCE"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
-                    "tag": "v0.2.0",
+                    "tag": "v0.2.5",
                     "dest": "WE-Core"
                 }
             ]
@@ -62,9 +62,9 @@
             "buildsystem": "simple",
             "build-commands": [
                 "sed -e s/arm64/aarch64/g -i JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp JUCE/extras/Projucer/JuceLibraryCode/BinaryData.cpp",
-                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
+                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make -j $FLATPAK_BUILDER_N_JOBS)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Songbird.jucer",
-                "make -C Builds/LinuxMakefile/"
+                "make -j $FLATPAK_BUILDER_N_JOBS -C Builds/LinuxMakefile/"
             ],
             "post-install": [
                 "install -Dm644 -t ${FLATPAK_DEST}/share/licenses/songbird Source/Graphics/OFL.txt",
@@ -114,10 +114,10 @@
             "name": "carve",
             "buildsystem": "simple",
             "build-commands": [
-                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
+                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make -j $FLATPAK_BUILDER_N_JOBS)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Carve.jucer",
                 "sed -e \"s|Contents/x86_64-linux|Contents/`uname -m`-linux|g\" -i ./Builds/LinuxMakefile/Makefile",
-                "make -C Builds/LinuxMakefile/"
+                "make -j $FLATPAK_BUILDER_N_JOBS -C Builds/LinuxMakefile/"
             ],
             "cleanup": [
             ],
@@ -165,9 +165,9 @@
             "name": "monstr",
             "buildsystem": "simple",
             "build-commands": [
-                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make)",
+                "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make -j $FLATPAK_BUILDER_N_JOBS)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave MONSTR.jucer",
-                "make -C Builds/LinuxMakefile/"
+                "make -j $FLATPAK_BUILDER_N_JOBS -C Builds/LinuxMakefile/"
             ],
             "post-install": [
                 "install -Dm644 -t ${FLATPAK_DEST}/share/licenses/monstr Source/Graphics/OFL.txt",
