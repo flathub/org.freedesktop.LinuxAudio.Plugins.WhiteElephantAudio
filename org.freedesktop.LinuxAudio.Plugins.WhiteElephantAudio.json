@@ -180,12 +180,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/MONSTR-Stereo-Imaging.git",
-                    "tag": "v2.0.2",
-                    "commit": "8d9d2558ef5f0d4120a63df94aa9ec8a0cb0498b"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monstr-jucer.patch"
+                    "tag": "v2.1.0",
+                    "commit": "3552de6271d8069af1f94fa2c90a4fee0cd0111a"
                 },
                 {
                     "type": "archive",
@@ -195,18 +191,21 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
-                    "tag": "6.0.8",
+                    "tag": "7.0.5",
                     "dest": "JUCE"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
-                    "tag": "v0.2.2",
+                    "tag": "v0.2.6",
                     "dest": "WECore"
                 },
                 {
                   "type": "patch",
-                  "path": "patches/wef-build.patch"
+                    "paths": [
+                        "patches/monstr-jucer.patch",
+                        "patches/wef-build.patch"
+                    ]
                 }
             ]
         },
