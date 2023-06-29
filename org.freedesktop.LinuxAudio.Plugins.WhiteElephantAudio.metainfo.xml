@@ -16,7 +16,7 @@
         <li>Carve Distortion (v2.6.0): two stage wave shaping
         distortion, with multiple wave shapes and
         serial/parallel/stereo routing options.</li>
-        <li>MONSTR Stereo Imaging (v2.1.0: multiband stereo imaging
+        <li>MONSTR Stereo Imaging (v2.1.1: multiband stereo imaging
         plugin that allows the user to control the stereo width of a
         sound in 3 different frequency bands, and so can be used to
         perform common tasks such as narrowing the bass frequencies
@@ -28,6 +28,9 @@
     <update_contact>_hub_AT_figuiere_net_</update_contact>
     <url type="homepage">https://whiteelephantaudio.com/plugins/</url>
     <releases>
+      <release version="2023.06.28" date="2023-06-28">
+        <p>MONSTR 2.1.1</p>
+      </release>
       <release version="2023.04.21" date="2023-04-21">
         <p>MONSTR 2.1.0</p>
       </release>

@@ -180,8 +180,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/MONSTR-Stereo-Imaging.git",
-                    "tag": "v2.1.0",
-                    "commit": "3552de6271d8069af1f94fa2c90a4fee0cd0111a"
+                    "tag": "v2.1.1",
+                    "commit": "dbbed1be3e8b243db84e5516758730adf5ecc0bf"
                 },
                 {
                     "type": "archive",
