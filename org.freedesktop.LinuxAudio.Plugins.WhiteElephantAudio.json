@@ -4,7 +4,6 @@
     "runtime-version": "stable",
     "sdk": "org.freedesktop.Sdk//23.08",
     "build-extension": true,
-    "appstream-compose": false,
     "branch": "23.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/WhiteElephantAudio",
@@ -180,8 +179,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/MONSTR-Stereo-Imaging.git",
-                    "tag": "v2.1.2",
-                    "commit": "917e53a9d131470cdbd01aa8a82feaf371576e52"
+                    "tag": "v2.1.3",
+                    "commit": "7071f938813a879397726aaa1a8374e9cfdaf59b"
                 },
                 {
                     "type": "archive",
@@ -197,7 +196,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
-                    "tag": "v0.2.7",
+                    "tag": "v0.2.8",
                     "dest": "WECore"
                 },
                 {
@@ -213,8 +212,7 @@
             "name": "meta",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.WhiteElephantAudio.metainfo.xml",
-                "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.WhiteElephantAudio --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.WhiteElephantAudio"
+                "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.WhiteElephantAudio.metainfo.xml"
             ],
             "sources": [
                 {
