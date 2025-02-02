@@ -115,10 +115,7 @@
             "build-commands": [
                 "(cd JUCE/extras/Projucer/Builds/LinuxMakefile/ && make -j $FLATPAK_BUILDER_N_JOBS)",
                 "JUCE/extras/Projucer/Builds/LinuxMakefile/build/Projucer --resave Carve.jucer",
-                "sed -e \"s|Contents/x86_64-linux|Contents/`uname -m`-linux|g\" -i ./Builds/LinuxMakefile/Makefile",
                 "make -j $FLATPAK_BUILDER_N_JOBS -C Builds/LinuxMakefile/"
-            ],
-            "cleanup": [
             ],
             "post-install": [
                 "install -Dm644 -t ${FLATPAK_DEST}/share/licenses/carve Source/Graphics/OFL.txt",
@@ -131,7 +128,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/Carve-Distortion.git",
-                    "tag": "v2.6.0"
+                    "tag": "v2.6.1"
                 },
                 {
                     "type": "patch",
@@ -145,17 +142,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
-                    "tag": "6.1.4",
+                    "tag": "8.0.4",
                     "dest": "JUCE"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/juce-614-header.patch"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
-                    "tag": "v0.2.3",
+                    "tag": "v0.2.8",
                     "dest": "WE-Core"
                 }
             ]
