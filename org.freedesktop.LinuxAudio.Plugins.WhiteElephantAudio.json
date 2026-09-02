@@ -2,9 +2,9 @@
     "id": "org.freedesktop.LinuxAudio.Plugins.WhiteElephantAudio",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
     "runtime-version": "stable",
-    "sdk": "org.freedesktop.Sdk//25.08",
+    "sdk": "org.freedesktop.Sdk//26.08",
     "build-extension": true,
-    "branch": "25.08",
+    "branch": "26.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/WhiteElephantAudio",
         "prepend-path": "/app/extensions/Plugins/WhiteElephantAudio/bin"
@@ -31,6 +31,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/Richter-Tremolo.git",
+                    "commit": "c9de04aae4a3e72969658fce54e0503685147c6a",
                     "tag": "v2.3.0"
                 },
                 {
@@ -45,6 +46,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
+                    "commit": "965d0ca4be178c4a0000b116d460e15c30311992",
                     "tag": "7.0.2",
                     "dest": "JUCE"
                 },
@@ -52,6 +54,7 @@
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
                     "tag": "v0.2.5",
+                    "commit": "4d95183ffd61c6733cf6678b82d2e4c8ed5b6245",
                     "dest": "WE-Core"
                 }
             ]
@@ -76,6 +79,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/Songbird-Formant-Filter.git",
+                    "commit": "816dd55ece2e4934982d16227a49006b34796e75",
                     "tag": "v2.3.0"
                 },
                 {
@@ -90,6 +94,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
+                    "commit": "2f980209cc4091a4490bb1bafc5d530f16834e58",
                     "tag": "6.1.6",
                     "dest": "JUCE"
                 },
@@ -100,6 +105,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
+                    "commit": "9d88c5e29ce3f6cf4297e0a9892ce9d9d70847d5",
                     "tag": "v0.2.4",
                     "dest": "WE-Core"
                 },
@@ -128,6 +134,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/Carve-Distortion.git",
+                    "commit": "b9499d8ff53066db231c83234a214863274603f3",
                     "tag": "v2.6.1"
                 },
                 {
@@ -142,12 +149,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
+                    "commit": "51d11a2be6d5c97ccf12b4e5e827006e19f0555a",
                     "tag": "8.0.4",
                     "dest": "JUCE"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
+                    "commit": "98a1b3bc213e06082471a4296c6ba4ae6e8437eb",
                     "tag": "v0.2.8",
                     "dest": "WE-Core"
                 }
@@ -183,12 +192,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/juce-framework/JUCE.git",
+                    "commit": "d054f0d14dcac387aebda44ce5d792b5e7a625b3",
                     "tag": "7.0.9",
                     "dest": "JUCE"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jd-13/WE-Core.git",
+                    "commit": "98a1b3bc213e06082471a4296c6ba4ae6e8437eb",
                     "tag": "v0.2.8",
                     "dest": "WECore"
                 },
